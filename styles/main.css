@@ -1,0 +1,47 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: antiquewhite;
+}
+.header{
+    border: 1px solid black;
+    margin-bottom: 20px;
+    padding: 0px;
+    background-color: rgb(231, 196, 150);
+    
+}
+.heading{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+}
+.info{
+    font-size: 25px;
+    float: left;
+    margin-bottom: 20px;
+    line-height: 30px;
+}
+.main-image{
+    float: left;
+    margin: 5px;
+    text-align: center;
+    border: 2px solid black;
+    height: 300px;
+}
+.college-info{
+    margin-top: 5px;
+    font-size: 24px;
+    padding: 20px;
+}
+.container2 {
+    display: flex;           /* establish flex container */
+    flex-direction: row;  /* make main axis vertical */
+    justify-content: center; /* center items vertically, in this case */
+    align-items: center; 
+    gap: 30px;
+    margin: 15px;
+}
+.form
+{
+    margin-top: 20px;
+    font-size: 20px;
+}
