@@ -8,6 +8,14 @@
     <link rel="stylesheet" type="text/css" href="styles/form.css" />
   </head>
   <body>
+    <div class="topnav">
+      <a href="main.html">Home</a>
+      <a href="coep.html">COEP</a>
+      <a href="pict.html">PICT</a>
+      <a href="vit.html">VIT</a>
+      <a href="mit.html">MIT</a>
+      <a class="active" href="form.html">Form</a>
+    </div>
     <div class="main">
       <p>Admission Form</p>
       <div class="admission-form">
@@ -28,13 +36,8 @@
             placeholder="Last Name"
           /><br /><br />
           <label for="city">City: </label>
-          <input
-            type="text"
-            id="frame"
-            name="city"
-            placeholder="City"
-          />
-          <br/><br/>
+          <input type="text" id="frame" name="city" placeholder="City" />
+          <br /><br />
           <label for="cet">CET Score: </label>
           <input
             type="number"
@@ -42,14 +45,18 @@
             name="city"
             placeholder="CET Score: "
           />
-          <br/><br/>
+          <br /><br />
           <h2>Choose preffered branch</h2>
-            <select name="colleges" id="cars">
-              <option value="cse">BTech CSE</option>
-              <option value="aids">BTech CSE, specialization in AIDS</option>
-              <option value="cyber">BTech CSE, specialization in Cybersecurity</option>
-              <option value="cbcs">BTech CSE, specialization in Business Studies</option>
-            </select>
+          <select name="colleges" id="cars">
+            <option value="cse">BTech CSE</option>
+            <option value="aids">BTech CSE, specialization in AIDS</option>
+            <option value="cyber">
+              BTech CSE, specialization in Cybersecurity
+            </option>
+            <option value="cbcs">
+              BTech CSE, specialization in Business Studies
+            </option>
+          </select>
           <div class="choice">
             <h2>Choose preffered college</h2>
             <select name="colleges" id="cars">

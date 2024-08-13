@@ -2,6 +2,31 @@ body{
     font-family: 'Courier New', Courier, monospace;
     background-color: antiquewhite;
 }
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: rgb(231, 196, 150);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: rgb(231, 196, 150);;
+    color:white
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    color: rgb(255, 145, 0);
+  }
 .header{
     border: 1px solid black;
     margin-bottom: 20px;
