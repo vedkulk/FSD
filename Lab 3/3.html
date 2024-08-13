@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="images/DALL·E 2023-08-25 09.33.45 - An astronaut in the ocean, real picture.png" rel="icon" type="image/ico"></link>
+    <style>
+    .wrapper{
+        border: 2px dotted rgb(96, 139, 168);
+        width: 500px;
+    }
+    .main {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }   
+    .main>* {
+        flex: 1 1 160px;
+    }
+    .video {
+        border-bottom: 1px dotted black;
+    }
+    .video .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 5px 0;
+        border-radius: 6px;
+        position: absolute;
+        z-index: 1;
+    }
+    .video:hover .tooltiptext {
+        visibility: visible;
+    }
+    .video.tooltiptext::after {
+        content: " ";
+        position: absolute;
+        top: 50%;
+        right: 100%; /* To the left of the tooltip */
+        margin-top: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: transparent black transparent transparent;
+    }
+    .heading td{
+        background-color: rgb(221, 218, 218);
+        font-size: 50px;
+    }
+    tr,td {
+        border: 1px dotted black;
+        font-size: 30px;
+        padding: 10px;
+        text-align: center;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+    <div class="main">
+    <div class="video">
+        <h1>Iframe tag</h1>
+      <span class="tooltiptext">Hello World</span>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube-nocookie.com/embed/8l9xAvuGJFo?si=vu806yCyFkvn4NUQ"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <div class="map">
+    <h3>Location</h3>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15133.323242851997!2d73.80661599999999!3d18.5139471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bfb9e53a05f9%3A0x2be5e8da02be693e!2sMIT%20World%20Peace%20University%20(MIT-WPU)!5e0!3m2!1sen!2sin!4v1721107877866!5m2!1sen!2sin"
+      width="400"
+      height="150"
+      frameborder="1"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      title="Fiestel Ciphe"
+    ></iframe>
+</div>
+<div class="table-div">
+    <table>
+      <thead class="heading">
+        <td>Name</td>
+        <td>Roll No</td>
+        <td>Panel</td>
+        <td>Job</td>
+      </thead>
+      <tr>
+        <td>Ved</td>
+        <td>46</td>
+        <td rowspan="3">D</td>
+        <td rowspan="2">Developer</td>
+      </tr>
+      <tr>
+        <td>Manthan</td>
+        <td>48</td>
+        
+      </tr>
+      <tr>
+        <td>Aditya</td>
+        <td>39</td>
+        <td>Data Engineer</td>
+      </tr>
+    </table>
+</div>
+<div class="progress">
+    <progress value="5" max="10">
+        <p style="color: red">
+          oops your browser doesn't support progress tag
+        </p>
+    </progress>
+</div>
+</div>
+</div>
+  </body>
+</html>

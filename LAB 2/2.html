@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lists</title>
+    <style>
+      body {
+        background-color: antiquewhite;
+        color: brown;
+      }
+      .content{
+        display: flex;
+        flex-direction: row;
+        align-items:baseline;
+      }
+      .main {
+        border: 1px solid brown;
+        display: inline-block;
+        font-family: "Courier New", Courier, monospace;
+        font-size: medium;
+        padding-right: 15px;
+        padding-left: 10px;
+      }
+      .submit-form {
+        color: white;
+        background-color: green;
+        border: none;
+        padding: 10px;
+        border-radius: 2px;
+        margin: 15px;
+        cursor: pointer;
+      }
+      .submit-form:hover {
+        background-color: rgb(13, 104, 13);
+        opacity: 90%;
+      }
+      .submit-form:active {
+        background-color: rgb(13, 104, 13);
+        opacity: 80%;
+      }
+      .admissionForm {
+        border: 1px solid brown;
+        display: inline-block;
+        background-color: white;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h2 align="center">This is how lists are made</h2>
+    </div>
+    <div class="content">
+      <div class="main">
+        <div class="sport">
+          <h3>Sports</h3>
+          <ul type="circle">
+            <li>Cricket</li>
+            <li>Football</li>
+            <li>Volleyball</li>
+          </ul>
+        </div>
+        <h3>Cities in Maharashtra</h3>
+        <ul type="disc">
+          <li>Mumbai</li>
+          <li>Pune</li>
+          <li>Nagpur</li>
+          <li>Nashik</li>
+        </ul>
+        <h3>Subjects for this semester</h3>
+        <ol type="I">
+          <div class="overflow">
+            <li>FSD</li>
+            <li>AIES</li>
+            <li>ICS</li>
+            <li>DE</li>
+            <li>BDT</li>
+            <li>ESD</li>
+            <li>IE</li>
+          </div>
+        </ol>
+        <h3>Beverages</h3>
+        <ol>
+          <li>Tea</li>
+          <li>Coffee</li>
+          <li>Soda</li>
+        </ol>
+        <h3>Description Lists</h3>
+        <ul>
+          <li>
+            <dt>Mango</dt>
+            <dd>-Fruit</dd>
+          </li>
+          <li>
+            <dt>Potatoes</dt>
+            <dd>-Vegetable</dd>
+          </li>
+        </ul>
+      </div>
+      <div class="admissionForm">
+        <form>
+          <label for="fname">First Name: </label>
+          <input
+            type="text"
+            id="fname"
+            name="fname"
+            placeholder="First Name"
+          /><br /><br />
+          <label for="lname">Last Name: </label>
+          <input
+            type="text"
+            id="fname"
+            name="lname"
+            placeholder="Last Name"
+          /><br /><br />
+          <label for="rollno">Roll No.: </label>
+          <input
+            type="number"
+            id="frame"
+            name="rollno"
+            placeholder="Roll Number"
+          /><br />
+          <h2>Choose favourite language</h2>
+          <input type="radio" id="html" name="fav_language" value="Python" />
+          <label for="python">Python</label><br />
+          <input type="radio" id="cpp" name="fav_language" value="cpp" />
+          <label for="cpp">C++</label><br />
+          <input
+            type="radio"
+            id="javascript"
+            name="fav_language"
+            value="JavaScript"
+          />
+          <label for="javascript">JavaScript</label>
+        </form>
+        <button class="submit-form">Submit</button>
+      </div>
+    </div>
+  </body>
+</html>
