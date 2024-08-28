@@ -6,14 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JS Tut</title>
     <script src="main.js"></script>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" 
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+      crossorigin="anonymous">
+    <link rel=“stylesheet” href="styles.css">
   </head>
   <body>
-    <button onclick="giveAlert()">Click me!</button>
-    <button class="color-button" onclick="colorChange()">Change Color!</button>
-    <button onclick="confirmBox()">Don't Click</button>
-    <button onclick="promptBox()">Captcha</button><br>
+    <div class="mb-5">
+      <button type="button" class="btn btn-primary" onclick="giveAlert()">Click me!</button>
+      <button onclick="confirmBox()">Don't Click</button>
+      <button onclick="promptBox()">Captcha</button>
+    </div>
+
     <input class="subject" type="text" placeholder="Enter subject">
-    <button onclick="switchCase()">Submit</button><br>
-    
+    <button  onclick="switchCase()">Submit</button><br>
+
+    <div c style="display: block" class=" m-5 p-3 border ">
+      <div class="form-group">
+        <label for="exampleInputEmail1">Number 1: </label>
+        <input type="number" class="col-xs-2 num1" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Number 1">
+      </div>
+      <div class=" input-group mb-3">
+        <div class="input-group-prepend">
+          <p class="mt-2">Operators: </p>
+        </div>
+        <select name="operators" class="operators ml-2 p-1 btn btn-mini border">
+        <option selected>Choose...</option>
+          <option value="add">+</option>
+          <option value="subtract">-</option>
+          <option value="multiply">x</option>
+          <option value="divide">/</option>
+        </select>
+        <span class="caret"></span>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Number 2: </label>
+        <input type="number" class="col-xs-2 num2" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Number 2">
+      </div>
+      <p>=</p>
+      <output class="result"></output><br>
+      <button type="button" class="btn btn-success" onclick="calculate()">Evaluate</button>
+    </div>
+  </body>
 </html>

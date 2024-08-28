@@ -1,12 +1,7 @@
 const giveAlert = () => {
     alert('hello Alert')
 }
-const colorChange = () =>{
-    const colors=['Red', 'Blue', 'Green', 'Cyan','Orange', 'Purple', 'Beige', 'Black', 'Violet', 'Purple', 'Brown']
-    const index = Math.floor(Math.random() * colors.length)
-    document.body.style.backgroundColor=colors[index];
-}
-//const epilepsy = setInterval(colorChange, 100)
+
 const confirmBox = () => {
     test=confirm("Confirm method ")
     if(test===true){
@@ -23,17 +18,6 @@ const promptBox = ()=>{
     }
     else{
         alert('Access denied. ')
-    }
-}
-document.write('<p class="name">Hello Harsh </p>')
-const loops = ()=>{
-    for(let i=0;i<11;i++){
-        console.log(i)
-    }
-    let i = 10
-    while(i!=0){
-        console.log(i)
-        i--;
     }
 }
 const switchCase = () =>{
@@ -55,3 +39,35 @@ const switchCase = () =>{
             break;
     }
 }
+const calculate = () => {
+    let n1 = document.querySelector('.num1').value;
+    let n2 = document.querySelector('.num2').value;
+    let operator = document.querySelector('.operators').value;
+    let result;
+    if(n2==0&&operator==='divide'){
+        document.querySelector('.num1').value = '';
+        document.querySelector('.num2').value = '';
+        document.querySelector('.result').textContent="";
+        alert('Cannot divide by 0');
+    }
+    else{
+        switch (operator) {
+        case "add":
+            result = parseFloat(n1) + parseFloat(n2);
+            break;
+        case "subtract":
+            result = parseFloat(n1) - parseFloat(n2);
+            break;
+        case "multiply":
+            result = parseFloat(n1) * parseFloat(n2);
+            break;
+        case "divide":
+            result = parseFloat(n1) / parseFloat(n2);
+            break;
+        default: 
+            result = "Invalid operator";
+            break;
+        }
+        document.querySelector('.result').textContent = result;
+    }
+  };
