@@ -36,3 +36,22 @@ const loops = ()=>{
         i--;
     }
 }
+const switchCase = () =>{
+    let Input=document.querySelector('.subject');
+    let userInput= Input.value
+    console.log(userInput)
+    switch(userInput){
+        case 'HTML':
+            alert('You chose HTML')
+            break;
+        case 'JavaScript':
+            alert('You chose JavaScript')
+            break;
+        case 'jQuery':
+            alert('You chose jQuery')
+            break;
+        default:
+            alert('Subject not available')
+            break;
+    }
+}
