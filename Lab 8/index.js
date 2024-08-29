@@ -26,3 +26,27 @@ const student = {
 }
 console.log(student)
 student.coding()
+function details(name, age){
+    this.name=name;
+    this.age=age;
+}
+const person1 = new details("Ved", 20)
+console.log(person1)
+console.log(arr2.slice(1,5))
+arr2.splice(1,0,3,4)
+console.log(arr2)
+arr2.splice(1,2)
+console.log(arr2)
+const str = "HeLLo WoRLd"
+console.log(str.toLowerCase())
+console.log(str.toUpperCase())
+console.log(str.charAt(2))
+console.log(str.charCodeAt(4))
+const str2 = '    mango   kiwi, apple, cashew'
+console.log(str2.trim())
+console.log(str2.replace('apple', 'banana'))
+const a1 = '123'
+const test1 = a1.padStart(5,'0')
+const test2 =a1.padEnd(5,'0')
+console.log(test1)
+console.log(test2)
