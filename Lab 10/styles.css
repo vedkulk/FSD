@@ -1,0 +1,12 @@
+#content {
+    color: blue;
+    position: relative;
+    margin: 20px;
+}
+.highlight {
+    background-color: yellow;
+}
+#image {
+    width: 30px;
+    height: 20px;
+}

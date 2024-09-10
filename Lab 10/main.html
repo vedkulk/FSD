@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML</title>
+    <link rel=“stylesheet” href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Welcome to the Dynamic Web Page</h1>
+    <p id="content">
+      This is some sample content that will be changed using JavaScript.
+    </p>
+    <div>
+      <p class="highlight">This paragraph is highlighted.</p>
+      <p class="highlight">This is another highlighted paragraph.</p>
+    </div>
+    <img
+      id="image"
+      src="../images/DALL·E 2023-08-25 09.33.45 - An astronaut in the ocean, real picture.png"
+      alt="Placeholder Image"
+    />
+    <button onclick="changeImage()">Change Image</button>
+    <div id="parent">
+      <p id="child">This is a child node that will be removed.</p>
+    </div>
+    <button onclick="addTextNode()">Add Text Node</button>
+    <button onclick="removeNode()">Remove Node</button>
+    <script src="script.js"></script>
+  </body>
+</html>
