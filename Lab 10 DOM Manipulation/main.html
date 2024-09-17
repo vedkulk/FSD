@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Web Page</title>
+    <style>
+        #box {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            position: relative;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title">Welcome to our Dynamic Web Page</h1>
+    <p class="paragraph">This is a paragraph.</p>
+    <p class="paragraph">This is another paragraph.</p>
+    <div id="box"></div>
+    <br>
+    <button id="colorButton">Change Color</button>
+    <button id="moveButton">Move Box</button>
+    <button id="changeImageButton">Change Image</button>
+    <button id="addNodeButton">Add Node</button>
+    <button id="deleteNodeButton">Delete Node</button>
+    <br><br>
+    <img id="myImage" src="https://via.placeholder.com/150" alt="Placeholder Image">
+    <br><br>
+    <form id="myForm">
+        <input type="text" id="name" placeholder="Enter your name">
+        <input type="submit" value="Submit">
+    </form>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        document.getElementById('colorButton').addEventListener('click', function() {
+            document.getElementById('box').style.backgroundColor = 'lightgreen';
+        });
+
+        document.getElementById('moveButton').addEventListener('click', function() {
+            let box = document.getElementById('box');
+            box.style.left = parseInt(box.style.left || 0) + 50 + 'px';
+        });
+
+        document.getElementById('changeImageButton').addEventListener('click', function() {
+            document.getElementById('myImage').src = 'https://via.placeholder.com/200';
+        });
+
+        document.getElementById('addNodeButton').addEventListener('click', function() {
+            let newParagraph = document.createElement('p');
+            let textNode = document.createTextNode('This is a new paragraph.');
+            newParagraph.appendChild(textNode);
+            document.body.appendChild(newParagraph);
+        });
+
+        document.getElementById('deleteNodeButton').addEventListener('click', function() {
+            let paragraphs = document.getElementsByClassName('paragraph');
+            if (paragraphs.length > 0) {
+                paragraphs[0].parentNode.removeChild(paragraphs[0]);
+            }
+        });
+        document.getElementById('title').innerHTML = 'Welcome to our Updated Dynamic Web Page';
+        $(document).ready(function() {
+            $('#colorButton').text('Change Box Color');
+            $('#myForm').submit(function(e) {
+                e.preventDefault();
+                let name = $('#name').val();
+                alert('Hello, ' + name + '!');
+            });
+            $('#myImage').attr('title', 'This is a placeholder image');
+        });
+    </script>
+</body>
+</html>
